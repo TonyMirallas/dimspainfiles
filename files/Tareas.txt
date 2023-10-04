@@ -1,0 +1,49 @@
+Crear orden
+- Cuando la tecnología es open2 hay que habilitar la subida de un archivo.
+- Terminar logica calculos en cliente
+- Hacer logica calculos en servidor
+- Comprobar que tienes los creditos necesarios antes de solicitar new orden ( vista )
+- Crear una vista del Technical donde se vean todas las ordenes y se pueda filtrar por usuario
+- Crear una vista del Profesional donde se vean todas las ordenes y su estado y en caso de tener archivos poder descargarlos.
+- El Technical puede subir un archivo a esa orden si esta Open2
+- El Technical puede cambiar el estado de la orden
+- Comuniar por email a todos los implicados la nueva orden.
+- En la vista del profesional redirecciónar a lista de ordenes despues de crear una.
+- Poder realizar una devolución de orden.
+- Tras realizar una orden exitosa se copia el shadow en nuestro ftp y se borra el actual.
+
+Compra de creditos
+- Crear un wp - 1
+- Configurar wocommerce - 1.5
+- Crear los paquetes de creditos - 1.5
+- Configurar pasarelas de pago - 2
+- Lanzar un evento cuando se compra un paquete hacía un edpoint de laravel. (userName) - 4
+- Modificar logia de add creditos para recibir nombre en vez de id - 4
+- Crear vistas de ver compras de creditos, profesional, distribuidor -
+- Crear vista para el Technical donde pueda ver las compras de creditos de los diferentes roles.
+Vistas del Technical
+- Creación usuarios de diferentes roles - 0.5
+- Ver/Edición usuarios - 0.5
+- Listar usuarios ( con filtros ) - 0.5
+- Listar ordenes creadas ( con filtros ) - 3
+- Ver/Edición de ordenes (status) - 4
+- Listar compras de creditos ( con filtros ) -
+- Ver una compra especifica de creditos
+- Mi perfil
+
+Vista del Profesional
+- Mi perfil
+- Crear ordenes
+- Lista de ordenes (Esta lista no es de tabla si no de desplegable)
+- Si no esta vinculado a un Distribuidor necesita una vista de solicitar creditos
+- Si no esta vinculado a un Distribuidor necesita vista que lista las solicitudes de creditos y su estado.
+
+Vista Distributor
+- Mi perfil
+- Lista de solicitudes de creditos, puede aceptar o denegar (desplegable)
+- Lista de sus profesionales ( tabla )
+- Vista de perfil unico
+- Compra de creditos ( wp )
+- Listado de suma y resta de creditos
+
+awe

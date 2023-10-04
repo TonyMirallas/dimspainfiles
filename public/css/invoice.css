@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap);
+
+/* @page {size: 595px 842px; margin:0!important; padding:0!important} */
+
+
+@page {
+    size: A4;
+    margin: 0mm 0mm 0mm 0mm;
+}
+
+* { 
+    font-family: 'Montserrat', sans-serif, Verdana;
+}
+
+@media print {
+    body {
+      margin: 0 !important;
+      padding:0 !important;
+      border:0 !important;
+      outline:0 !important;
+    }
+  }
+
+body {
+    
+    margin:0!important;  
+    padding:0!important; 
+    width: 100%;
+    background-color:  #e6e6e6;
+    font-family: Verdana!important;
+    font-size:12px!important;
+}
+:root {
+    --rojo:  #d5181f;
+    --rosado: #fbe3e3;
+    --rosadotexto: #e67171;
+    --bordo: #af3131;
+    --grisclaro: #898989;
+
+}
+
+.contenedor {
+    background-color: #fff;
+    /* width: 60%; */
+    /* padding: 50px 70px; */
+    position: relative;
+}
+.logo {
+    width: 100%;
+}
+.presupuesto {
+    float:right;
+    position:absolute;
+    top: 85px;
+    right: 120px;
+    color: #1a1a1a;
+    font-weight: 700;
+    font-size:12px;
+}
+.datadimsport {
+    color: #898989;
+    font-size:12px;
+    font-weight: 500;
+}
+.datacliente, .ventainfo, .total, .observaciones, .textoabajo {
+    position:relative;
+    padding-top:20px;
+    display: flow-root;
+}
+
+.infocliente {
+    text-align:left;
+    float:left;
+}
+.fechacliente {
+    text-align: right;
+    float:right;
+
+}
+.fechacliente strong, .datacliente strong {
+    color: #e67171;
+}
+
+.tablaventa {
+    width: 100%;
+    border-collapse: collapse;
+}
+.tablaventa th {
+    text-align: center;
+    background-color: #d5181f;
+    color: white;
+    font-weight: 400;
+}
+.tablaventa td {
+    text-align: center;
+    background-color: #fbe3e3;
+    text-transform: uppercase;
+}
+.tablaventa th:first-child, .tablaventa td:first-child {
+    text-align:left;
+}
+
+.tablaventa td, .tablaventa th {
+    padding: 8px;
+}
+
+td .descrip {
+    color: #af3131;
+    font-size: 12px;
+    font-weight: 600;
+}
+td .producto {
+    font-size: 13px;
+    text-align: center;
+}
+.proitem {font-weight: 500;}
+
+/* td:first-child {width: 25%;} */
+/* td:nth-child(2) {width: 20%;} */
+.subitem td {font-size:13px;}
+
+.subitem td.obs {font-weight: 500;}
+
+.textoabajo .centrado {
+    text-align: center;
+    font-weight: 500;
+    font-size: 13px;
+}
+.textoabajo .textolargo {
+    text-align:justify;
+    font-size:11px;
+}

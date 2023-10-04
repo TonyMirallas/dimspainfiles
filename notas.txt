@@ -1,0 +1,94 @@
+
+box-nav-l box-nav-r
+   - box-title
+   - flex-auto
+   - flex-gap-20
+box-nav-sub
+
+
+- Orden de borrado de la DB
+- task
+- invoice_products
+- invoices
+- interest_lead
+- contact
+- lead
+
+
+
+
+
+
+
+Estadisticas
+  - 
+
+Debates
+  - Debatir desde que emails se van a enviar los presupuestos y como implementarlo
+  - Debatir el outlook 
+
+DB
+  - Tabla con entidades para añadir campos como "intereses"
+  - Unificar leads y customers ( revisar tabla interes_lead )
+
+Edpoints
+  - Tracing tiene que venir con datos extras en "relations"
+
+PDF 
+  - Refactorizar la vista del pdf
+
+Lead
+  - Poder eliminar leads
+  - Mejorar Tablas con información mas relevante
+  - Al crear el lead añadir un campo de tarifas
+  - Añadir competencia
+  - Editar lead
+
+Invoices
+  - Poder eliminar invoices
+  - Mejorar Tablas con información mas relevante
+  - Editar presupuesto
+  - Poder crearlos en sage
+  - Probar si se puede crear con productos que no existen
+  - Arreglar pdf ( dividir entre paginas)
+  - Detectar tarifa de la entidad
+  - Modificar estados de presupuesto
+    - Preguntar si ese lead ya tiene todos lo datos
+    - Crear el lead en sage como cliente y luego cargarlo en customer y borrarlo del lead
+    - Crear el presupuesto en sage
+    - Notificación a facturación
+    - Modificar estado de presupuesto a aceptado
+    - Completar las comlumnas fecha de aprobación y quien aprobó el presupuesto.
+
+Productos
+  - Productos compuestos
+
+
+
+
+Para Migrar
+  - php artisan migrate:refresh
+
+
+
+
+
+Presupuesto > relaciona > contacto
+Seguimiento > dirijido > contacto
+
+
+Invoice
+   - Se crea en DB
+   - Se envia por email
+   - Se aprueba ( a mano )
+   - Se rellenan todos los campos del customer que puedan faltar
+   - Se manda a sage
+
+
+Implicaciones
+   Al crear un invoice implica generar tracings sobre un contacto
+
+
+
+
+
